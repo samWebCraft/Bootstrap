@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Body Explorer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/project1/style.css">
+    <link rel="stylesheet" href="/project1/script.js">
+</head>
+<body>
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">Human Body Explorer</h2>
+
+    <div class="row">
+        <div class="col-md-5 text-center">
+            <img src="/project1/image.png" class="img-fluid body-img" alt="Human Body">
+        </div>
+
+        <div class="col-md-7">
+            <div class="mb-3">
+                <button class="btn btn-primary m-1" onclick="showInfo('head')">Head</button>
+                <button class="btn btn-danger m-1" onclick="showInfo('heart')">Heart</button>
+                <button class="btn btn-success m-1" onclick="showInfo('lungs')">Lungs</button>
+                <button class="btn btn-warning m-1" onclick="showInfo('stomach')">Stomach</button>
+                <button class="btn btn-info m-1" onclick="showInfo('liver')">Liver</button>
+                <button class="btn btn-dark m-1" onclick="showInfo('legs')">Legs</button>
+            </div>
+
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 id="title">Select a Body Part</h3>
+                    <p id="description">Click any button to view information.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
